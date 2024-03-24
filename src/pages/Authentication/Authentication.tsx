@@ -1,5 +1,11 @@
+import Grid from "@mui/material/Grid";
+
 const Authentication = () => {
-  return <div style={{ marginLeft: "500px" }}>Hello from authentication</div>;
+  return (
+    <Grid item xs={8}>
+      Hello from authentication
+    </Grid>
+  );
 };
 
 export default Authentication;

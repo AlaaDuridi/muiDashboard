@@ -1,5 +1,11 @@
+import Grid from "@mui/material/Grid";
+
 const Functions = () => {
-  return <div style={{ marginLeft: "500px" }}>Functions</div>;
+  return (
+    <Grid item xs={8}>
+      Functions
+    </Grid>
+  );
 };
 
 export default Functions;

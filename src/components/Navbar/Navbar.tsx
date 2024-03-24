@@ -10,7 +10,7 @@ import ListItemText from "@mui/material/ListItemText";
 import { MAIN_NAVBAR_LIST_ITEMS } from "./consts/navbarListItems";
 
 import { NAV_BAR_STYLES } from "./styles.ts";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();

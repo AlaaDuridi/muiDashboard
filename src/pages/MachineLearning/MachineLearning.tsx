@@ -1,5 +1,11 @@
+import Grid from "@mui/material/Grid";
+
 const MachineLearning = () => {
-  return <div style={{ marginLeft: "500px" }}>MachineLearning</div>;
+  return (
+    <Grid item xs={8}>
+      MachineLearning
+    </Grid>
+  );
 };
 
 export default MachineLearning;
