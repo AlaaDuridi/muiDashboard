@@ -10,8 +10,10 @@ import ListItemText from "@mui/material/ListItemText";
 import { MAIN_NAVBAR_LIST_ITEMS } from "./consts/navbarListItems";
 
 import { NAV_BAR_STYLES } from "./styles.ts";
+import { useParams, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <>
       {" "}
@@ -21,7 +23,7 @@ const Navbar = () => {
         <List>
           {MAIN_NAVBAR_LIST_ITEMS.map((item) => (
             <ListItem key={item.id} disablePadding>
-              <ListItemButton>
+              <ListItemButton onClick={() => navigate(item.route)}>
                 <ListItemIcon sx={NAV_BAR_STYLES.icons}>
                   {item.icon}
                 </ListItemIcon>
