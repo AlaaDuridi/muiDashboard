@@ -7,9 +7,9 @@ const Authentication = () => {
     textTransform: "capitalize",
     borderRadius: 2.5,
     "&.MuiButton-contained": {
-      backgroundColor: "#009be5",
+      // backgroundColor: "#009be5",
       "&:hover": {
-        backgroundColor: "#006db3",
+        backgroundColor: "red",
       },
     },
     "&.MuiButton-outlined": {
@@ -28,6 +28,9 @@ const Authentication = () => {
       </CommonButton>
       <CommonButton sx={BUTTON_STYLES} variant="outlined">
         Add user
+      </CommonButton>
+      <CommonButton sx={BUTTON_STYLES} variant="contained" color="secondary">
+        Primary
       </CommonButton>
     </Grid>
   );
