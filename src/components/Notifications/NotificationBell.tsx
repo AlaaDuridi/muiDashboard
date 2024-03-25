@@ -52,7 +52,15 @@ const NotificationBell = ({ iconColor }: NotificationBellProps) => {
 };
 
 interface NotificationBellProps {
-  iconColor: "inherit" | "primary" | "secondary" | "default";
+  iconColor:
+    | "default"
+    | "error"
+    | "primary"
+    | "secondary"
+    | "info"
+    | "success"
+    | "warning"
+    | "inherit";
 }
 
 export default NotificationBell;
