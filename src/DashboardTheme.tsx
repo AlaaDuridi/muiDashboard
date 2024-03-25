@@ -20,9 +20,9 @@ const DashboardTheme = createTheme({
   },
 
   palette: {
-    primary: {
-      main: "#bada55",
-    },
+    // primary: {
+    //   main: "#bada55",
+    // },
   },
   typography: {
     fontSize: 25,
