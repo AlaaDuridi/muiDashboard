@@ -1,4 +1,4 @@
-import CommonButton from "../common/CommonButton.tsx";
+import CommonButton from "../common/CommonButton/CommonButton.tsx";
 import NotificationBell from "../Notifications/NotificationBell.tsx";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";

@@ -2,7 +2,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import Badge from "@mui/material/Badge";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
-import BasicMenu from "../../components/common/BasicMenu.tsx";
+import BasicMenu from "../common/BasicMenu/BasicMenu.tsx";
 
 import { useState } from "react";
 

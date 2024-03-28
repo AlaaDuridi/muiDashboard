@@ -29,6 +29,7 @@ interface CommonButtonProps {
   size?: "small" | "medium" | "large";
   sx?: object;
   variant?: "text" | "outlined" | "contained";
+  onClick?: () => void;
 }
 
 export default CommonButton;
