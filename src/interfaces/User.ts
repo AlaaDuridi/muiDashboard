@@ -1,5 +1,7 @@
 export interface User {
-    userId: string |undefined;
+    userId: string ;
     email: string;
-    phoneNumber: string;
+    phoneNumber?: string|undefined;
+    [key: string]: string | undefined;
+
   }

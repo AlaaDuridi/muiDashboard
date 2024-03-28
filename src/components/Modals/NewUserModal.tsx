@@ -72,7 +72,6 @@ const NewUserModal = ({ open, onClose, addNewUser }: NewUserModalProps) => {
     <Box sx={modalStyles.inputFields}>
       <TextField
         placeholder="User ID"
-        name="userId"
         label="User ID"
         required
         {...register("userId")}
@@ -83,7 +82,6 @@ const NewUserModal = ({ open, onClose, addNewUser }: NewUserModalProps) => {
       />
       <TextField
         placeholder="Email"
-        name="email"
         label="Email"
         required
         {...register("email")}
@@ -94,7 +92,6 @@ const NewUserModal = ({ open, onClose, addNewUser }: NewUserModalProps) => {
       />
       <TextField
         placeholder="Phone number"
-        name="phoneNumber"
         label="Phone number"
         required
         {...register("phoneNumber")}

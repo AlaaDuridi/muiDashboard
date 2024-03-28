@@ -28,7 +28,7 @@ const Authentication = () => {
       } else {
         const filteredData = searchResults.filter((item: User) => {
           return Object.keys(item).some((key) =>
-            item[key].toString().toLowerCase().includes(lowercasedValue)
+            item[key]?.toString().toLowerCase().includes(lowercasedValue)
           );
         });
         setUsers(filteredData);
