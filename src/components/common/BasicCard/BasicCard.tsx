@@ -12,7 +12,7 @@ const BasicCard = ({ header, content }: BasicCardProps) => {
 };
 
 interface BasicCardProps {
-  header: ReactNode;
+  header?: ReactNode;
   content: ReactNode;
 }
 
