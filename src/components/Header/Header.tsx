@@ -8,16 +8,16 @@ import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 
 const Header = ({ title }: HeaderProps) => {
-  const HEADER_STYLES = {
+  const headerStyles = {
     wrapper: {
-      backgroundColor: "#009be5",
       width: "100%",
       display: "flex",
       flexDirection: "column",
+      backgroundColor: "#009be5",
       padding: "20px",
     },
     topRow: {
-      dsiplay: "flex",
+      display: "flex",
       flexDirection: "row",
       justifyContent: "end",
       alignItems: "center",
@@ -35,8 +35,8 @@ const Header = ({ title }: HeaderProps) => {
       marginLeft: "320px",
     },
     link: {
-      fontWeight: "500",
-      color: "rgba(255,255,255,0.7)",
+      fontWeight: 500,
+      color: "rgba(255, 255, 255, 0.7)",
       "&:hover": {
         color: "#fff",
         cursor: "pointer",
@@ -44,25 +44,32 @@ const Header = ({ title }: HeaderProps) => {
     },
     webButton: {
       marginRight: "5px",
+      color: "white",
     },
   };
 
   return (
-    <Box sx={HEADER_STYLES.wrapper}>
-      <Box sx={HEADER_STYLES.topRow}>
-        <Typography sx={HEADER_STYLES.link}>Go to docs</Typography>
-        <NotificationBell iconColor="default" />
-        <Avatar src="https://mui.com/static/images/avatar/2.jpg"></Avatar>
+    <Box sx={headerStyles.wrapper}>
+      <Box sx={headerStyles.topRow}>
+        <Typography sx={headerStyles.link}>Go to docs</Typography>
+        <NotificationBell iconColor="secondary" />
+        <Avatar src="https://mui.com/static/images/avatar/1.jpg" />
       </Box>
-      <div>
-        <Typography>{title}</Typography>
-        <CommonButton variant="outlined">Web Setup</CommonButton>
-        <Tooltip title="help">
-          <IconButton>
-            <HelpIcon />
-          </IconButton>
-        </Tooltip>
-      </div>
+      <Box sx={headerStyles.middleRow}>
+        <Typography variant="h1" color="white">
+          {title}
+        </Typography>
+        <Box>
+          <CommonButton sx={headerStyles.webButton} variant="outlined">
+            Web setup
+          </CommonButton>
+          <Tooltip title="Help">
+            <IconButton color="secondary">
+              <HelpIcon />
+            </IconButton>
+          </Tooltip>
+        </Box>
+      </Box>
     </Box>
   );
 };
