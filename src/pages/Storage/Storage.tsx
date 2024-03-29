@@ -1,10 +1,12 @@
 import BasicSnackbar from "../../components/common/BasicSnackbar/BasicSnackbar";
 import CommonButton from "../../components/common/CommonButton/CommonButton";
 import GridWrapper from "../../components/common/GridWrapper/GridWrapper";
-import { useState } from "react";
+import Loading from "../../components/common/Loading/Loading";
+import { useState, useEffect } from "react";
 
 const Storage = () => {
   const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const handleClick = () => {
     setOpen(true);
@@ -20,12 +22,27 @@ const Storage = () => {
     setOpen(false);
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <GridWrapper>
       This is storage page.
-      <CommonButton variant="contained" onClick={handleClick}>
-        Open Success snackbar
-      </CommonButton>
+      {loading ? (
+        <Loading>
+          <CommonButton variant="contained" onClick={handleClick}>
+            Open success snackbar
+          </CommonButton>
+        </Loading>
+      ) : (
+        <CommonButton variant="contained" onClick={handleClick}>
+          Open success snackbar
+        </CommonButton>
+      )}
       <BasicSnackbar
         open={open}
         onClose={handleClose}
