@@ -1,7 +1,7 @@
 # A Simple Dashboard using react Material UI
 
 ![image](https://github.com/AlaaDuridi/muiDashboard/assets/51034664/8f57d9eb-cf2a-4562-a76a-2b859bd325b9)
-![image](https://github.com/AlaaDuridi/muiDashboard/assets/51034664/3cad5807-5c99-49a9-9d36-cb9fa9b9c930)
+![image](https://github.com/AlaaDuridi/muiDashboard/assets/51034664/3145d25e-73af-4b09-926d-245bf042569a)
 ![image](https://github.com/AlaaDuridi/muiDashboard/assets/51034664/aa7b26a7-3230-4258-8292-09c751304507)
 ![image](https://github.com/AlaaDuridi/muiDashboard/assets/51034664/e3f9be95-921e-4cf3-a490-f4db5aac88f8)
 
