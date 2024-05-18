@@ -20,4 +20,4 @@
 ###### npm install
 ###### npm run dev
 
-- to use data grind, u need to install its dependencies : > npm install @mui/x-data-grid
+####### to use data grid, u need to install its dependencies : > npm install @mui/x-data-grid
