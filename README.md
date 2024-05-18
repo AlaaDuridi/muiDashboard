@@ -36,3 +36,10 @@ export default {
 # https://mui.com/material-ui/customization/theme-components/
 # https://mui.com/material-ui/customization/palette/
 # https://mui.com/material-ui/customization/typography/
+
+
+> npm install 
+> npm run dev 
+
+
+- to use data grind, u need to install its dependencies : > npm install @mui/x-data-grid
